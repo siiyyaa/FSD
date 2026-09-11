@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration</title>
+    <link rel="stylesheet" href="stuReg.css">
+    <script src="stuReg.js" defer></script>
+</head>
+<body>
+    <center>
+    <form id="registrationForm" novalidate>
+    <table>
+        <tr>
+            <td colspan="2"><h1>Student Registration Form</h1></td>
+        </tr>
+        <tr>
+            <td><label for="name">Student Name:</label></td>
+            <td><input type="text" id="name" name="name" required></td>
+        </tr>
+        <tr>
+            <td><label for="rollno">Roll Number:</label></td>
+            <td><input type="text" id="rollno" name="rollno" required></td>
+        </tr>
+        <tr>
+            <td><label for="email">Student Email:</label></td>
+            <td><input type="email" id="email" name="email" required></td>
+        </tr>
+        <tr>
+            <td><label for="phone">Student Phone Number:</label></td>
+            <td><input type="tel" id="phone" name="phone" required></td>
+        </tr>
+        <tr>
+            <td><label for="age">Student Age:</label></td>
+            <td><input type="number" id="age" name="age" required></td>
+        </tr>
+        <tr>
+            <td><label for="DOB">Student Date of Birth:</label></td>
+            <td><input type="date" id="DOB" name="DOB" required></td>
+        </tr>
+        <tr>
+            <td>Gender:</td>
+            <td>
+                <input id="genderMale" type="radio" name="gender" value="male" required>
+                <label for="genderMale">Male</label>
+                <input id="genderFemale" type="radio" name="gender" value="female" required>
+                <label for="genderFemale">Female</label>
+                <input id="genderOther" type="radio" name="gender" value="other" required>
+                <label for="genderOther">Other</label>
+            </td>
+        </tr>
+        <tr>
+            <td><label for="address">Student Address:</label></td>
+            <td><textarea id="address" name="address" required></textarea></td>
+        </tr>
+        <tr>
+            <td><label for="course">Student Course:</label></td>
+            <td>
+                <select id="course" name="course" required>
+                    <option value="">Select a course</option>
+                    <option value="BTech">BTech</option>
+                    <option value="BCA">BCA</option>
+                    <option value="MCA">MCA</option>
+                    <option value="BBA">BBA</option>
+                    <option value="MBA">MBA</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td><label for="password">Student Password:</label></td>
+            <td><input type="password" id="password" name="password" required></td>
+        </tr>
+        <tr>
+            <td><label for="confirmPassword">Confirm Password:</label></td>
+            <td><input type="password" id="confirmPassword" name="confirmPassword" required></td>
+        </tr>
+        <tr>
+            <td colspan="2" class="submitCell">
+                <button id="registerBtn" type="submit">Register</button>
+            </td>
+        </tr>
+    </table>
+    </form>
+    </center>
+</body>
