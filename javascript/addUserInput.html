@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>add two numbers</title>
+    <style>
+        body {
+            background-color: rgb(119, 119, 196);
+            color: white;
+        }
+        table {
+            border-color: rgb(119, 119, 196);
+        }
+        td {
+            padding: 10px;
+        }
+        .result {
+            background-color: rgb(119, 119, 196);
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <h1>ADDITION OF TWO NUMBERS</h1>
+    
+        <form>
+            <table border="2.5">
+                <tr>
+                    <td><label for="num1">Number 1:</label></td>
+                    <td><input type="text" id="num1" name="num1"></td>
+                </tr>
+                <tr>
+                    <td><label for="num2">Number 2:</label></td>
+                    <td><input type="text" id="num2" name="num2"></td>
+                </tr>
+                <tr>
+                    <td id="result" colspan="2" style="text-align: center;" type="button" onclick="addNumbers()"> ADD </td>  
+                </tr>
+            </table>
+        </form>
+    </center>
+    <script>
+    function addNumbers() {
+        var num1 = parseFloat(document.getElementById("num1").value);
+        var num2 = parseFloat(document.getElementById("num2").value);
+        var result = Number(num1) + Number(num2);
+        document.getElementById("result").innerHTML = "Result: " + result;
+    }
+</script>
+</body>
+</html>
